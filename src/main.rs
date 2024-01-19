@@ -1,4 +1,4 @@
-use serde:{Deserialize,Serialize};
+use serde::{Deserialize,Serialize};
 
 #[derive(Serialize, Deserialize)]
 
@@ -31,5 +31,5 @@ fn main() {
         ]
     };
     let json = serde_json::to_string(&article).unwrap();
-    println!("The Json is: {}" json)
+    println!("The Json is: {}", json)
 }
